@@ -1,0 +1,9 @@
+.is-hidden {
+  visibility: 0;
+  opacity: 0;
+  pointer-events: none;
+
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: var(--time-function);
+}

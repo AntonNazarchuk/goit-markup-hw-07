@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  background-color: #ffffff;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.mainlogo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-logo-color);
+}
+
+.mainlogo-second {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-logo-color);
+}
+
+.mainlogo-third {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--thirdlogo-color);
+}
+
+.header-list {
+  display: flex;
+  padding-left: 93px;
+  .header-list__item:not(:last-child) {
+    padding-right: 50px;
+  }
+  .header-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-text-color-first);
+    padding: 32px 0px;
+    position: relative;
+    &:hover,
+    &:focus {
+      color: var(--header-text-color-third);
+    }
+    &.active::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      bottom: 0;
+      background-color: var(--header-text-color-third);
+    }
+  }
+}
+
+.active {
+  color: var(--main-logo-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  .contacts__link {
+    display: flex;
+    height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-text-color-second);
+    fill: var(--second-text-color);
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+      color: var(--header-text-color-third);
+      fill: var(--header-text-color-third);
+    }
+  }
+  .contacts__item:not(:last-child) {
+    padding-right: 50px;
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}

@@ -1,0 +1,50 @@
+:root {
+  --main-logo-color: #2196f3;
+  --second-logo-color: #000000;
+  --thirdlogo-color: #ffffff;
+  --header-text-color-first: #212121;
+  --header-text-color-second: #757575;
+  --header-text-color-third: #2196f3;
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #ffffff;
+  --footer-color-contact1: #ffffff;
+  --footer-color-contact2: rgba(255, 255, 255, 0.6);
+  --main-btn-color: #f5f4fa;
+  --second-btn-color: #2196f3;
+  --third-btn-color: #188ce8;
+  --background-color: #2f303a;
+  --social-link-color: #afb1b8;
+  --social-link-color2: #ffffff;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --focus-color: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  margin: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.time-link {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
+.time-link-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
+// --------
+
+
